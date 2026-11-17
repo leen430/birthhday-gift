@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY BIRTHDAYY!!</title>
+    <link rel="stylesheet" href="birthday.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Bebas+Neue&display=swap">
+</head>
+<body>
+
+    <div id="envelopeContainer">
+        <div id="envelope" onclick="openEnvelope()">
+            <div class="envelope-back"></div>
+            <div class="envelope-letter">
+                <p>WISHING YOU THE HAPPIEST BIRTHDAY ❤️</p>
+            </div>
+            <div class="envelope-flap"></div>
+            <div class="envelope-front"></div>
+        </div>
+        <p class="instruction">Click the envelope to open it</p>
+    </div>
+
+    <div id="bookContainer">
+        <div class="book">
+
+            <div class="page">
+                <h2>happy birthday ❤️</h2>
+                <p>i wish i could've make it physical but this woks too < 3 </p>
+            </div>
+
+             <div class="page">
+                <h2>a poem (kinda) for u</h2>
+                <p> Another year, you're getting old,<br>
+                    (I'd say it to your face, but I'm told<br>
+                    the distance makes that kind of hard,<br>
+                    so here's a poem instead, a card.)<br><br>
+                    So blow your candles, make a wish,<br>
+                    And no it's not for a better dish<br>
+                    Happy birthday, love of mine,<br>
+                    you're getting better, like old wine ❤️</p>
+            </div>
+
+            <div class="page photo-page">
+                <img class="page-photo" src="bday.msg.jpeg" alt="Our photo">
+                <p class="photo-caption">wanted to give u a handwritten one❤️</p>
+            </div>
+
+            <div class="page photo-page">
+                <img class="page-photo" src="bday.msg2.jpeg" alt="Our photo">
+                
+            </div>
+
+            <div class="page photo-page">
+                <img class="page-photo" src="bday.msg3.jpeg" alt="Our photo">
+                
+            </div>
+
+            <div class="page photo-page">
+                <img class="page-photo" src="bday.msg4.jpeg" alt="Our photo">
+                <p class="photo-caption">ik u suffered to read it</p>
+            </div>
+
+            <div class="page">
+                <h2>thank you ❤️</h2>
+                <p>This little book is just a reminder that you mean so much to me. so thank you for being part of my life and make ordinary days special < 3 </p>
+            </div>
+
+        </div>
+
+        <div class="controls">
+            <button onclick="prevPage(); this.blur()">&lt; previous page</button>
+            <button onclick="nextPage(); this.blur()">next page &gt;</button>
+        </div>
+
+        <p id="pageCounter">Page <span id="pageNumber">1</span> of 7</p>
+
+        <p class="instruction">Use ← → arrow keys or swipe to turn pages.</p>
+    </div>
+
+    <script src="birthday.js"></script>
+</body>
+</html>
